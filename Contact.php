@@ -16,7 +16,7 @@
     
 <nav class="navbar navbar-expand-sm grey">
     <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)">
+        <a class="navbar-brand" href="Homepage.php">
             <img src="logo.png" alt="Company logo" style="width:99px; height:60px">
         </a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -25,7 +25,7 @@
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="localhost/Gibjohn/Contact.php">Contact Us</a>
+                    <a class="nav-link" href="Contact.php">Contact Us</a>
                 </li>
             </ul>
             <form class="d-flex" method="get" action="/Gibjohn/Tutor_student.php">

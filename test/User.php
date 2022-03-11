@@ -1,6 +1,8 @@
 <?php
 
 class user {
+    public $first_name = "";
+    public $last_name = "";
     public $email = "";
     public $password = "";
     public $password_hash = "";
@@ -17,22 +19,21 @@ class user {
 
     }
 
-    
     function insert() {
         $sql = "
-        Insert INTO student(
-            First_name,
-            Last_name,
+        Insert INTO users(
+            first_name,
+            last_name,
             email,
             password,
-            Status
+            is_active
         )
         VALUES (
+            '{$this->first_name}',
+            '{$this->last_name}',
             '{$this->email}',
             '{$this->password_hash}',
-            '{$this->f_name}'
-            '{$this->l_name}'
-            'active'
+            '1'
         )    
         ";
         
@@ -45,17 +46,17 @@ class user {
 
     }
 
-   function authenticate() {
-       $sql = "
-          SELECT Student_Id, First_name, Last_name, Email, Password, DOB, Start_date, Status
-            FROM student
-            WHERE Email=\"{$this->email}\";
+    function authenticate() {
+        $sql = "
+            SELECT id, first_name, secound_name, email, password, token, is_active
+            FROM users
+            WHERE email=\"{$this->email}\";
             ";
         
             $result = $this->connection->query($sql);
             if ($row = $result->fetch_assoc()) {
 
-                if(password_verify($this->password, $row['Password'])) {
+                if(password_verify($this->password, $row['password'])) {
                     $this->authenticated = true;
                 }
             }

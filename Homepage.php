@@ -13,7 +13,7 @@
     
 <nav class="navbar navbar-expand-sm grey">
     <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)">
+        <a class="navbar-brand" href="Homepage.php">
             <img src="logo.png" alt="Company logo" style="width:99px; height:60px">
         </a> 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
