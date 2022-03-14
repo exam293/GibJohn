@@ -12,6 +12,41 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Document</title>
+    <?php 
+    function progress($course_name){
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "gibjohn";
+        $Login_student_id = "1";
+        $progress = "";
+            
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+            
+        $sql = "SELECT course_id, student_id, tutor_id, course_name, progress, starting_date, starting_date status FROM course";
+        $result = $conn->query($sql);
+                
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                $line = "<br>". $row["course_id"]. " ". $row["student_id"]. " " . $row["tutor_id"] ." ". $row["course_name"] ." ". $row["progress"] ." ". $row["starting_date"] ." ". $row["status"] . "<br>";
+                //echo $line;
+                if ($row["student_id"] == $Login_student_id && $row["course_name"] == $course_name){
+                    $progress = $row["progress"]."%";
+                    echo $progress;
+                }
+            }
+        } else {
+            echo "0%";
+        }    
+        $conn->close();
+    }
+    ?>
 </head>
 <body>
     
@@ -36,25 +71,233 @@
 
 <div class="container">
     <div class="c1 rounded">
-        <h3 class="title" >Science</h3> 
-        <h6 class="VM" href="Homepage.php">
-            View More
-        </h6>
+        <h4 class="title" >Science</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
         <div class="progress">
-            <div class="progress-bar" style="width:70%">70%</div>
+            <div class="progress-bar" style="width:<?php 
+                    $course = "science";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "science";
+                    progress($course) 
+                ?>
+            </div>
         </div>
     </div>
-    <div class="c2 rounded"></div>
-    <div class="c3 rounded"></div>
-    <div class="c4 rounded"></div>
-    <div class="c5 rounded"></div>
-    <div class="c6 rounded"></div>
-    <div class="c7 rounded"></div>
-    <div class="c8 rounded"></div>
-    <div class="c9 rounded"></div>
-    <div class="c10 rounded"></div>
-    <div class="c11 rounded"></div>
-    <div class="c12 rounded"></div>
+    <div class="c2 rounded">
+        <h4 class="title" >Mathematics</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "mathematics";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "mathematics";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c3 rounded">
+        <h4 class="title" >English</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "english";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "english";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c4 rounded">
+        <h4 class="title" >History</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "history";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "history";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c5 rounded">
+        <h4 class="title" >Geography</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "geography";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "geography";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c6 rounded">
+        <h4 class="title" >Modern Foreign Languages</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "mfl";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "mfl";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c7 rounded">
+        <h4 class="title" >Design and Technology</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "design_technology";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "design_technology";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c8 rounded">
+        <h4 class="title" >Art and Design</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "art_design";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "art_design";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c9 rounded">
+        <h4 class="title" >Music</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "music";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "music";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c10 rounded">
+        <h4 class="title" >Physical Education</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "pe";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "pe";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c11 rounded">
+        <h4 class="title" >Citizenship</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "citizenship";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "citizenship";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
+    <div class="c12 rounded">
+        <h4 class="title" >Computing</h4> 
+        <div class="VM">
+            <a class="vm" href="Homepage.php">
+                View More
+            </a>
+        </div>
+        <div class="progress">
+            <div class="progress-bar" style="width:<?php 
+                    $course = "computing";
+                    progress($course) 
+                ?>">
+                <?php 
+                    $course = "computing";
+                    progress($course) 
+                ?>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
