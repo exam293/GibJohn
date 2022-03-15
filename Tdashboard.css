@@ -57,6 +57,7 @@
   .container * {
     border: 1px solid rgb(0, 0, 0);
     position: relative;
+   
     
   }
   
@@ -73,7 +74,8 @@
   }
   
 .rounded {
-    border-radius: 1.9rem!important;
+    border-radius: 0.6rem!important;
+    text-align: center!important;
 }
 
 .Mrounded {
@@ -81,22 +83,24 @@
 }
 
 .title{
-    border: 0px solid black;
+    border: 1px solid rgb(255, 255, 255);
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    border-radius: 0.6rem;
+    background-color: #274156;
 }
 .VM{
     border: 0px solid black;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    padding-top: 35px;
+    padding-bottom: 10px;
 }
 
 a.vm:link{
   border: 0px solid black;
   text-align: center;
   font-family: 'Raleway', sans-serif;
-  color: #274156;
+  color: #1C6E8C; 
   text-decoration: none;
 }
 
@@ -122,4 +126,20 @@ a.vm:hover{
 
 .hidden{
     visibility: hidden;
+}
+
+.button {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+.tabs{
+  background-color: #605856;
+}
+
+.subject_img{
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  width: 89px;
 }

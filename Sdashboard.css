@@ -49,6 +49,7 @@
   .container * {
     border: 1px solid rgb(0, 0, 0);
     position: relative;
+    text-align: center;
     
   }
   
@@ -65,19 +66,23 @@
   }
   
 .rounded {
-    border-radius: 1.9rem!important;
+    border-radius: 0.6rem!important;
 }
 
 .title{
-    border: 0px solid black;
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
+  border: 1px solid rgb(255, 255, 255);
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  border-radius: 0.6rem;
+  background-color: #274156;
 }
+
 .VM{
     border: 0px solid black;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    padding-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 2px;
 }
 
 a.vm:link{
@@ -116,3 +121,12 @@ a.vm:hover{
   transition: width .6s ease;
 }
 
+.tabs{
+  background-color: #605856;
+}
+
+.subject_img{
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
+  width: 89px;
+}

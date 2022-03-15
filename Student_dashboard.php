@@ -70,8 +70,9 @@
 </nav> 
 
 <div class="container">
-    <div class="c1 rounded">
+    <div class="c1 rounded tabs text-white">
         <h4 class="title" >Science</h4> 
+        <img src="science.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -89,8 +90,9 @@
             </div>
         </div>
     </div>
-    <div class="c2 rounded">
+    <div class="c2 rounded tabs text-white">
         <h4 class="title" >Mathematics</h4> 
+        <img src="maths.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -108,8 +110,9 @@
             </div>
         </div>
     </div>
-    <div class="c3 rounded">
+    <div class="c3 rounded tabs text-white">
         <h4 class="title" >English</h4> 
+        <img src="english.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -127,8 +130,9 @@
             </div>
         </div>
     </div>
-    <div class="c4 rounded">
+    <div class="c4 rounded tabs text-white">
         <h4 class="title" >History</h4> 
+        <img src="history.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -146,8 +150,9 @@
             </div>
         </div>
     </div>
-    <div class="c5 rounded">
+    <div class="c5 rounded tabs text-white">
         <h4 class="title" >Geography</h4> 
+        <img src="geography.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -165,8 +170,9 @@
             </div>
         </div>
     </div>
-    <div class="c6 rounded">
+    <div class="c6 rounded tabs text-white">
         <h4 class="title" >Modern Foreign Languages</h4> 
+        <img src="mfl.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -184,8 +190,9 @@
             </div>
         </div>
     </div>
-    <div class="c7 rounded">
-        <h4 class="title" >Design and Technology</h4> 
+    <div class="c7 rounded tabs text-white">
+        <h4 class="title" >Design and Technology</h4>
+        <img src="dt.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -203,8 +210,9 @@
             </div>
         </div>
     </div>
-    <div class="c8 rounded">
+    <div class="c8 rounded tabs text-white">
         <h4 class="title" >Art and Design</h4> 
+        <img src="ad.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -222,8 +230,9 @@
             </div>
         </div>
     </div>
-    <div class="c9 rounded">
+    <div class="c9 rounded tabs text-white">
         <h4 class="title" >Music</h4> 
+        <img src="music.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -241,8 +250,9 @@
             </div>
         </div>
     </div>
-    <div class="c10 rounded">
+    <div class="c10 rounded tabs text-white">
         <h4 class="title" >Physical Education</h4> 
+        <img src="pe.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -260,8 +270,9 @@
             </div>
         </div>
     </div>
-    <div class="c11 rounded">
+    <div class="c11 rounded tabs text-white">
         <h4 class="title" >Citizenship</h4> 
+        <img src="citizenship.png" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -279,8 +290,9 @@
             </div>
         </div>
     </div>
-    <div class="c12 rounded">
+    <div class="c12 rounded tabs text-white">
         <h4 class="title" >Computing</h4> 
+        <img src="computing.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More

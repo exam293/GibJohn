@@ -12,18 +12,53 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Document</title>
-    <?php 
+    <?php
+        
+
         function Course_visibility($course_page){
-            $page = "1";
-            if($course_page == $page){
-                echo "visible";
+            if (array_key_exists('page1',$_POST)){
+                $page = "1";
+                if($course_page == $page){
+                    echo "visible";
+                }
+    
+                else{
+                    echo "hidden";
+                }
+            }
+
+            elseif (array_key_exists('page2',$_POST)){
+                $page = "2";
+                if($course_page == $page){
+                    echo "visible";
+                }
+    
+                else{
+                    echo "hidden";
+                }
+            }
+
+            elseif (array_key_exists('page3',$_POST)){
+                $page = "3";
+                if($course_page == $page){
+                    echo "visible";
+                }
+    
+                else{
+                    echo "hidden";
+                }
             }
 
             else{
-                echo "hidden";
+                $page = "1";
+                if($course_page == $page){
+                    echo "visible";
+                }
+    
+                else{
+                    echo "hidden";
+                }
             }
-            
-
         }
     ?>
 </head>
@@ -49,48 +84,36 @@
 </nav> 
 <!-- page 1 courses -->
 <div class="container">
-    <div class="c1 rounded 
-    <?php 
-        $page="1"; 
-        Course_visibility($page) 
-    ?>">
-        <h4 class="title" >Science</h4> 
+    <div class="c1 rounded tabs text-white <?php $tpage="1"; Course_visibility($tpage)?>">
+        <h4 class="title">Science</h4> 
+        <img src="science.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c2 rounded 
-        <?php 
-        $page="1"; 
-        Course_visibility($page) 
-        ?>">
+    <div class="c2 rounded tabs text-white <?php $tpage="1"; Course_visibility($tpage)?>">
         <h4 class="title" >Maths</h4> 
+        <img src="maths.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c3 rounded 
-        <?php 
-        $page="1"; 
-        Course_visibility($page) 
-        ?>">
+    <div class="c3 rounded tabs text-white <?php $tpage="1"; Course_visibility($tpage)?>">
         <h4 class="title" >English</h4> 
+        <img src="english.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c4 rounded 
-        <?php 
-        $page="1"; 
-        Course_visibility($page) 
-        ?>">
+    <div class="c4 rounded tabs text-white <?php $tpage="1"; Course_visibility($tpage) ?>">
         <h4 class="title" >History</h4> 
+        <img src="history.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -98,60 +121,54 @@
         </div>
     </div>
 
-    <div class="pc1 rounded"></div>
+    
+    <form class="pc1 rounded" style="border: 0px solid rgb(0, 0, 0);" method="post">
+        <input type="submit" class="btn btn-primary" name="page1" id="page1" value="1"/>
+        <input type="submit" class="btn btn-primary" name="page2" id="page2" value="2"/>
+        <input type="submit" class="btn btn-primary" name="page3" id="page3" value="3"/>
+    </form>
+    
     <div class="pc2 rounded"></div>
 
     <!-- page 1 students -->
-    <div class="s1 rounded"></div>
-    <div class="s2 rounded"></div>
-    <div class="s3 rounded"></div>
-    <div class="s4 rounded"></div>
-    <div class="s5 rounded"></div>
-    <div class="s6 rounded"></div>
+    <div class="s1 rounded tabs text-white"></div>
+    <div class="s2 rounded tabs text-white"></div>
+    <div class="s3 rounded tabs text-white"></div>
+    <div class="s4 rounded tabs text-white"></div>
+    <div class="s5 rounded tabs text-white"></div>
+    <div class="s6 rounded tabs text-white"></div>
 
     <!-- page 2 courses -->
-    <div class="c5 rounded 
-        <?php 
-            $page="2"; 
-            Course_visibility($page) 
-        ?>">
+    <div class="c5 rounded tabs text-white <?php $tpage="2"; Course_visibility($tpage) ?>">
         <h4 class="title" >Geography</h4> 
+        <img src="geography.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c6 rounded 
-        <?php 
-            $page="2"; 
-            Course_visibility($page) 
-        ?>">">
+    <div class="c6 rounded tabs text-white <?php $tpage="2"; Course_visibility($tpage)?>">
         <h4 class="title" >Modern Foreign Languages</h4> 
+        <img src="mfl.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c7 rounded 
-        <?php 
-            $page="2"; 
-            Course_visibility($page) 
-        ?>">">
+    <div class="c7 rounded tabs text-white <?php $tpage="2"; Course_visibility($tpage)?>">
         <h4 class="title" >Design and Technology</h4> 
+        <img src="dt.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c8 rounded 
-        <?php 
-            $page="2"; 
-            Course_visibility($page) 
-        ?>">">
+    <div class="c8 rounded tabs text-white <?php $tpage="2"; Course_visibility($tpage)?>">
         <h4 class="title" >Art and Design</h4> 
+        <img src="ad.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
@@ -160,48 +177,36 @@
     </div>
 
     <!-- page 3 courses -->
-    <div class="c9 rounded 
-        <?php 
-            $page="3"; 
-            Course_visibility($page) 
-        ?>">
+    <div class="c9 rounded tabs text-white <?php $tpage="3"; Course_visibility($tpage) ?>">
         <h4 class="title" >Music</h4> 
+        <img src="music.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c10 rounded 
-        <?php 
-            $page="3"; 
-            Course_visibility($page) 
-        ?>">
+    <div class="c10 rounded tabs text-white <?php $tpage="3"; Course_visibility($tpage)?>">
         <h4 class="title" >Physical Education</h4> 
+        <img src="pe.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c11 rounded 
-        <?php 
-            $page="3"; 
-            Course_visibility($page) 
-        ?>">
+    <div class="c11 rounded tabs text-white <?php $tpage="3"; Course_visibility($tpage)?>">
         <h4 class="title" >Citizenship</h4> 
+        <img src="citizenship.png" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
             </a>
         </div>
     </div>
-    <div class="c12 rounded 
-        <?php 
-            $page="3"; 
-            Course_visibility($page) 
-        ?>">
+    <div class="c12 rounded tabs text-white <?php $tpage="3"; Course_visibility($tpage) ?>">
         <h4 class="title" >Computing</h4> 
+        <img src="computing.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Homepage.php">
                 View More
