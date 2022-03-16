@@ -81,7 +81,6 @@
   
   .s24 { grid-area: 12 / 4 / 13 / 5; }
 
-  .s25 { grid-area: 12 / 4 / 13 / 5; }
   
   html, body , .container {
     height: 100%;
@@ -176,5 +175,10 @@ a.vm:hover{
 .subject_img{
   border: 1px solid #ddd;
   border-radius: 0.6rem;
-  width: 89px;
+  width: 67px;
+}
+
+.Contentbox{
+  background-color: #D0CCD0;
+  text-align: center;
 }

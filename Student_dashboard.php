@@ -46,6 +46,73 @@
         }    
         $conn->close();
     }
+
+    function course($subject) {
+        $_SESSION['subject'] = $subject;
+        echo $_SESSION['subject'];
+
+        link('Student_dashboard.php', 'course.php');
+      }
+    
+      if (isset($_GET['maths'])) {
+        $sub = "maths";
+        course($sub);
+      }
+
+      elseif (isset($_GET['science'])) {
+        $sub = "science";
+        course($sub);
+      }
+
+      elseif (isset($_GET['english'])) {
+        $sub = "english";
+        course($sub);
+      }
+
+      elseif (isset($_GET['history'])) {
+        $sub = "history";
+        course($sub);
+      }
+
+      elseif (isset($_GET['geography'])) {
+        $sub = "geography";
+        course($sub);
+      }
+
+      elseif (isset($_GET['mfl'])) {
+        $sub = "mfl";
+        course($sub);
+      }
+
+      elseif (isset($_GET['dt'])) {
+        $sub = "dt";
+        course($sub);
+      }
+
+      elseif (isset($_GET['ad'])) {
+        $sub = "ad";
+        course($sub);
+      }
+
+      elseif (isset($_GET['music'])) {
+        $sub = "music";
+        course($sub);
+      }
+
+      elseif (isset($_GET['pe'])) {
+        $sub = "pe";
+        course($sub);
+      }
+
+      elseif (isset($_GET['citizenship'])) {
+        $sub = "citizenship";
+        course($sub);
+      }
+
+      elseif (isset($_GET['computing'])) {
+        $sub = "computing";
+        course($sub);
+      }
     ?>
 </head>
 <body>
@@ -70,11 +137,11 @@
 </nav> 
 
 <div class="container">
-    <div class="c1 rounded tabs text-white">
+    <div class="c1 rounded tabs text-white col-md">
         <h4 class="title" >Science</h4> 
-        <img src="science.jpg" class="subject_img">
+        <img src="science.jpg" class="subject_img img-fluid">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?science=true">
                 View More
             </a>
         </div>
@@ -94,7 +161,7 @@
         <h4 class="title" >Mathematics</h4> 
         <img src="maths.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?maths=true">
                 View More
             </a>
         </div>
@@ -114,7 +181,7 @@
         <h4 class="title" >English</h4> 
         <img src="english.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?english=true">
                 View More
             </a>
         </div>
@@ -134,7 +201,7 @@
         <h4 class="title" >History</h4> 
         <img src="history.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?history=true">
                 View More
             </a>
         </div>
@@ -154,7 +221,7 @@
         <h4 class="title" >Geography</h4> 
         <img src="geography.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?geography=true">
                 View More
             </a>
         </div>
@@ -174,7 +241,7 @@
         <h4 class="title" >Modern Foreign Languages</h4> 
         <img src="mfl.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?mfl=true">
                 View More
             </a>
         </div>
@@ -194,7 +261,7 @@
         <h4 class="title" >Design and Technology</h4>
         <img src="dt.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?dt=true">
                 View More
             </a>
         </div>
@@ -214,7 +281,7 @@
         <h4 class="title" >Art and Design</h4> 
         <img src="ad.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?ad=true">
                 View More
             </a>
         </div>
@@ -234,7 +301,7 @@
         <h4 class="title" >Music</h4> 
         <img src="music.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?music=true">
                 View More
             </a>
         </div>
@@ -254,7 +321,7 @@
         <h4 class="title" >Physical Education</h4> 
         <img src="pe.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?pe=true">
                 View More
             </a>
         </div>
@@ -274,7 +341,7 @@
         <h4 class="title" >Citizenship</h4> 
         <img src="citizenship.png" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?citizenship=true">
                 View More
             </a>
         </div>
@@ -294,7 +361,7 @@
         <h4 class="title" >Computing</h4> 
         <img src="computing.jpg" class="subject_img">
         <div class="VM">
-            <a class="vm" href="Homepage.php">
+            <a class="vm" href="Student_dashboard.php?computing=true">
                 View More
             </a>
         </div>
