@@ -47,6 +47,41 @@
   
   .s7 { grid-area: 2 / 4 / 3 / 5; }
   
+  .s8 { grid-area: 4 / 4 / 5 / 5; }
+  
+  .s9 { grid-area: 6 / 4 / 7 / 5; }
+  
+  .s10 { grid-area: 8 / 4 / 9 / 5; }
+  
+  .s11 { grid-area: 10 / 4 / 11 / 5; }
+  
+  .s12 { grid-area: 12 / 4 / 13 / 5; }
+
+  .s13 { grid-area: 2 / 4 / 3 / 5; }
+  
+  .s14 { grid-area: 4 / 4 / 5 / 5; }
+  
+  .s15 { grid-area: 6 / 4 / 7 / 5; }
+  
+  .s16 { grid-area: 8 / 4 / 9 / 5; }
+  
+  .s17 { grid-area: 10 / 4 / 11 / 5; }
+  
+  .s18 { grid-area: 12 / 4 / 13 / 5; }
+    
+  .s19 { grid-area: 2 / 4 / 3 / 5; }
+  
+  .s20 { grid-area: 4 / 4 / 5 / 5; }
+  
+  .s21 { grid-area: 6 / 4 / 7 / 5; }
+  
+  .s22 { grid-area: 8 / 4 / 9 / 5; }
+  
+  .s23 { grid-area: 10 / 4 / 11 / 5; }
+  
+  .s24 { grid-area: 12 / 4 / 13 / 5; }
+
+  .s25 { grid-area: 12 / 4 / 13 / 5; }
   
   html, body , .container {
     height: 100%;
