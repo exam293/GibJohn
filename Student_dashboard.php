@@ -13,7 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>Document</title>
     <?php 
+    session_start();
     function progress($course_name){
+        
+        
         $servername = "localhost";
         $username = "root";
         $password = "";
@@ -50,8 +53,7 @@
     function course($subject) {
         $_SESSION['subject'] = $subject;
         echo $_SESSION['subject'];
-
-        link('Student_dashboard.php', 'course.php');
+        header("Location: /Gibjohn/course.php");
       }
     
       if (isset($_GET['maths'])) {
@@ -378,6 +380,7 @@
         </div>
     </div>
 </div>
+<a href="Homepage.php">click me</a>
 
 </body>
 </html>
