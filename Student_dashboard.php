@@ -240,7 +240,7 @@
         </div>
     </div>
     <div class="c6 rounded tabs text-white">
-        <h4 class="title" >Modern Foreign Languages</h4> 
+        <h4 class="title" >Modern Foreign Languages</h4> <!-- s3 -->
         <img src="mfl.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Student_dashboard.php?mfl=true">
@@ -320,7 +320,7 @@
         </div>
     </div>
     <div class="c10 rounded tabs text-white">
-        <h4 class="title" >Physical Education</h4> 
+        <h4 class="title" >Physical Education</h4>
         <img src="pe.jpg" class="subject_img">
         <div class="VM">
             <a class="vm" href="Student_dashboard.php?pe=true">
@@ -339,7 +339,7 @@
             </div>
         </div>
     </div>
-    <div class="c11 rounded tabs text-white">
+    <div class="c11 rounded tabs text-white"> <!-- s2 -->
         <h4 class="title" >Citizenship</h4> 
         <img src="citizenship.png" class="subject_img">
         <div class="VM">
